@@ -28,6 +28,10 @@ yarn install
 yarn serve
 ```
 
+### Запуск тестов
+```
+yarn test
+```
 ### Сборка для прода
 ```
 yarn build
