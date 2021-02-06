@@ -1,28 +1,55 @@
-<template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<template lang="pug">
+#app.app
+  .app__section
+    button.app__button(@click="toggleStarterChecklist")
+      | {{ $t('app.starterChecklistToggle') }}
+    button.app__button(@click="imitateTextSearch")
+      | {{ $t('app.imitateTextSearch') }}
+    starter-checklist.app__starter-checklist(
+      v-show="isStarterChecklistShown" 
+      :manager="starterChecklistManager" 
+      @close="hideStarterChecklist" 
+    )
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import StarterChecklist from '@/components/StarterChecklist/StarterChecklist'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    StarterChecklist
+  },
+  data() {
+    return {
+      isStarterChecklistShown: true,
+      starterChecklistManager: this.$starterChecklist.manager
+    }
+  },
+  methods: {
+    toggleStarterChecklist() {
+      this.isStarterChecklistShown = !this.isStarterChecklistShown
+    },
+    hideStarterChecklist() {
+      this.isStarterChecklistShown = false
+    },
+    imitateTextSearch() {
+      this.$starterChecklist.completeItem('searchByText')
+    }
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="sass">
+.app
+  font-family: Roboto, 'Helvetica Neue', 'Helvetica'
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  display: flex
+  padding: 40px
+  .app__starter-checklist-toggle
+    margin-bottom: 10px
+  .app__button
+    display: block
+    margin-bottom: 10px
 </style>

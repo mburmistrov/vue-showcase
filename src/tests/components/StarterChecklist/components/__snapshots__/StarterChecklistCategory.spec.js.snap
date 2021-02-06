@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StarterChecklistCategory snapshots should match snapshot 1`] = `
+<div
+  class="starter-checklist-category"
+>
+  <div
+    class="starter-checklist-category__name"
+  >
+    catName
+  </div>
+</div>
+`;

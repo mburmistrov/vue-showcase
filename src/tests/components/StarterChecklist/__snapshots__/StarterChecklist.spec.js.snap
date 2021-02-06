@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StarterChecklist snapshots should match snapshot 1`] = `
+<div
+  class="starter-checklist"
+>
+  <div
+    class="starter-checklist__header"
+  >
+    starterChecklist.header
+    <!---->
+    <div
+      class="starter-checklist__close"
+    />
+  </div>
+  <div
+    class="starter-checklist__body"
+  >
+    <starter-checklist-category-stub
+      class="starter-checklist__category"
+      name="starterChecklist.categories.search"
+    >
+      <starter-checklist-item-stub
+        class="starter-checklist__item"
+        itemkey="searchByText"
+      />
+      <starter-checklist-item-stub
+        class="starter-checklist__item"
+        iscompleted="true"
+        itemkey="searchByApp"
+      />
+    </starter-checklist-category-stub>
+    <starter-checklist-category-stub
+      class="starter-checklist__category"
+      name="starterChecklist.categories.filter"
+    >
+      <starter-checklist-item-stub
+        class="starter-checklist__item"
+        itemkey="filterByDate"
+      />
+    </starter-checklist-category-stub>
+  </div>
+</div>
+`;
