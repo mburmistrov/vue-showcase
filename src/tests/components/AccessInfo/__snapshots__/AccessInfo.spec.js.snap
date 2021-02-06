@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccessInfo template snapshots should match snapshot if user has expired license 1`] = `
+<div
+  class="access-info access-info--demo"
+>
+  <div
+    class="access-info__main"
+  >
+    <div
+      class="access-info__block access-info__access-name"
+    >
+      accessInfo.freeAccess
+    </div>
+    <div
+      class="access-info__block access-info__access-desc"
+    >
+      accessInfo.limited
+    </div>
+  </div>
+  <access-info-description-stub
+    class="access-info__details"
+    style="display: none;"
+  />
+</div>
+`;
+
+exports[`AccessInfo template snapshots should match snapshot if user has no license 1`] = `
+<div
+  class="access-info access-info--demo"
+>
+  <div
+    class="access-info__main"
+  >
+    <div
+      class="access-info__block access-info__access-name"
+    >
+      accessInfo.freeAccess
+    </div>
+    <div
+      class="access-info__block access-info__access-desc"
+    >
+      accessInfo.limited
+    </div>
+  </div>
+  <access-info-description-stub
+    class="access-info__details"
+    style="display: none;"
+  />
+</div>
+`;
+
+exports[`AccessInfo template snapshots should match snapshot if user has valid license 1`] = `
+<div
+  class="access-info"
+>
+  <div
+    class="access-info__main"
+  >
+    <div
+      class="access-info__block access-info__access-name"
+    >
+      accessInfo.fullAccess
+    </div>
+    <div
+      class="access-info__block access-info__access-desc"
+    >
+      accessInfo.nDaysLeft
+    </div>
+  </div>
+  <access-info-description-stub
+    class="access-info__details"
+    style="display: none;"
+  />
+</div>
+`;
+
+exports[`AccessInfo template snapshots should match snapshot if user has valid license that expires in less than a day 1`] = `
+<div
+  class="access-info"
+>
+  <div
+    class="access-info__main"
+  >
+    <div
+      class="access-info__block access-info__access-name"
+    >
+      accessInfo.fullAccess
+    </div>
+    <div
+      class="access-info__block access-info__access-desc"
+    >
+      accessInfo.lessThanDayLeft
+    </div>
+  </div>
+  <access-info-description-stub
+    class="access-info__details"
+    style="display: none;"
+  />
+</div>
+`;

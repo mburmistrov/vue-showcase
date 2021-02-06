@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccessInfoDescription template snapshots should match snapshot if user has expired license 1`] = `
+<div
+  class="access-info-description"
+>
+  <div
+    class="access-info-description__text"
+  >
+    accessInfo.desc.demoText
+  </div>
+  <div
+    class="access-info-description__action"
+  >
+    accessInfo.desc.demoActionText
+  </div>
+</div>
+`;
+
+exports[`AccessInfoDescription template snapshots should match snapshot if user has no license 1`] = `
+<div
+  class="access-info-description"
+>
+  <div
+    class="access-info-description__text"
+  >
+    accessInfo.desc.demoText
+  </div>
+  <div
+    class="access-info-description__action"
+  >
+    accessInfo.desc.demoActionText
+  </div>
+</div>
+`;
+
+exports[`AccessInfoDescription template snapshots should match snapshot if user has valid license 1`] = `
+<div
+  class="access-info-description"
+>
+  <div
+    class="access-info-description__text"
+  >
+    accessInfo.desc.text
+  </div>
+  <div
+    class="access-info-description__action"
+  >
+    accessInfo.desc.actionText
+  </div>
+</div>
+`;

@@ -30,6 +30,7 @@ const messages = {
   ru: {
     app: {
       starterChecklistToggle: 'Показать/скрыть чеклист',
+      setFakeUserOfType: 'Переключить тип юзера на {type}',
       imitateTextSearch: 'Имитировать поиск по тексту'
     },
     starterChecklist: {
@@ -58,6 +59,23 @@ const messages = {
         expandApp: 'Раскройте детальную информацию о любом приложении',
         visitParsingDemandsPage: 'Узнайте о добавлении страниц на отслеживание в разделе Запросить креативы',
         visitReferralDashboardPage: 'Узнайте о реферральной программе в Кабинете партнера'
+      }
+    },
+    accessInfo: {
+      freeAccess: 'Демо доступ',
+      fullAccess: 'Полный доступ',
+      limited: 'С ограничениями',
+      lessThanDayLeft: 'Осталось меньше дня',
+      nDaysLeft: '0 дней | Еще {nDays} день | Еще {nDays} дня | Еще {nDays} дней',
+      paymentStub: 'В реальном приложении мы бы полетели на страницу оплату, но здесь покупать нечего :)',
+      desc: {
+        demoText: `
+          Демо-режим имеет ограничения.
+          Для безграничной власти нужен полный доступ.
+        `,
+        demoActionText: 'Перейти к оплате',
+        text: 'Вам доступны все возможности сервиса до {licenseUntil}.',
+        actionText: 'Продлить доступ'
       }
     }
   }
